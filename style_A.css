@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Header{
+
+    background-position: center;
+    min-height: 30vh;
+    background-color: aqua;
+    width: 100%;
+    
+    background-size: cover;
+    position: relative;
+
+}
+.Header p{
+    font-size: 40px;
+    padding-top: 20px;
+    margin-left: 35%;
+}
+nav{
+    display: flex;
+    padding: 4% 10%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+.Nav-links{
+    flex: 1;
+    text-align: center;
+    
+}
+.Nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding : 8px 40px;
+    position: relative;
+}
+.Nav-links ul li a{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+
+.Nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: burlywood;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.Nav-links ul :hover ::after {
+    width: 100%;
+}
+
+
+
+
+
+.text-box{
+    text-align: center;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    height: 20vh;
+}
+.text-box h1{
+    font-size: 30px;
+}
+.text-box p{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 18px;
+    
+    
+}
+.btn{
+    background: burlywood;
+    border: 1px solid black;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 5px;
+}
+.grid{
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+
+    
+    
+}
+
+
+.grid-2{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+
+
+}
+.row{
+    background: burlywood;
+    border-radius: 10px;
+    flex-basis: 18%;
+    margin-bottom: 0;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+
+.row ul li{
+    padding: 5px 5px;
+    
+}
+.row a{
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid black;
+    background: aqua;
+    padding: 3px;
+
+    
+}
+.row ul li :hover{
+    background: white;
+    transition: 0.3s;
+    color: black;
+    border: 0px solid aqua;
+}
+.row li{
+    list-style-type: none;
+}
+.row h3{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 0;
+}
